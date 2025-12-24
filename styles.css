@@ -1,0 +1,104 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f6f7f9;
+}
+
+.card {
+  margin: 24px;
+  padding: 16px;
+  border-radius: 12px;
+  background: white;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: white;
+  border-bottom: 1px solid #e6e7ea;
+}
+
+.titleInput {
+  font-size: 16px;
+  padding: 8px 10px;
+  border: 1px solid #e6e7ea;
+  border-radius: 10px;
+  width: min(520px, 70vw);
+}
+
+.modePill {
+  margin-left: auto;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f0f2f5;
+  border: 1px solid #e6e7ea;
+}
+
+.editorWrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #e6e7ea;
+  background: white;
+  flex-wrap: wrap;
+}
+
+.toolbar button {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #e6e7ea;
+  background: #fff;
+  cursor: pointer;
+}
+
+.toolbar button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.divider {
+  width: 1px;
+  background: #e6e7ea;
+  margin: 0 6px;
+}
+
+.editor {
+  flex: 1;
+  padding: 18px 18px 64px 18px;
+  margin: 16px;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid #e6e7ea;
+  outline: none;
+  overflow: auto;
+  line-height: 1.6;
+}
+
+.editor h2 {
+  margin: 18px 0 8px;
+}
+
+.editor p {
+  margin: 6px 0;
+}
